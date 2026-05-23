@@ -21,3 +21,9 @@ genreSelect.addEventListener("change", function () {
 popup.onclick = function () {
     popup.style.display = "none";
 };
+
+let closeBtn = document.getElementById("closePopup");
+
+closeBtn.onclick = function () {
+    popup.style.display = "none";
+};
