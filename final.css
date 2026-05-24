@@ -129,3 +129,30 @@ h2 {
 .closeBtn:hover {
     color: rgb(249, 29, 0);
 }
+#popupImage {
+width: 270px;
+height: auto;
+margin-bottom: 75px;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+    padding: 40px;
+}
+
+.popup-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+#popupImage {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid rgb(133, 51, 0);
+}
