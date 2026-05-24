@@ -153,6 +153,48 @@ margin-bottom: 75px;
 #popupImage {
     width: 280px;
     height: auto;
-    border-radius: 10px;
-    border: 3px solid rgb(133, 51, 0);
+}
+
+.popup-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#movieTitle {
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+    color: rgb(77, 25, 3);
+}
+
+.movie-info {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-box {
+    background-color: rgb(147, 59, 21);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.ratings-box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.rating-item {
+    background-color: rgb(133, 51, 0);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
 }

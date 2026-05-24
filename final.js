@@ -33,12 +33,28 @@ closeBtn.onclick = function () {
 
 let genreData = {
     action: {
+        title: "The Fall Guy",
+        year: "2024",
+        rating: "PG-13",
         text: "'A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.' - IMDb",
         image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
+    
     }
 };
+let movieTitle = document.getElementById("movieTitle");
+let movieYear = document.getElementById("movieYear");
+let movieRating = document.getElementById("movieRating");
+genreSelect.addEventListener("change", function () {
 
-let value = genreSelect.value;
+    let value = genreSelect.value;
+    let data = genreData[value];
 
-popupText.textContent = genreData[value].text;
-popupImage.src = genreData[value].image;
+    movieTitle.textContent = data.title;
+    movieYear.textContent = data.year;
+    movieRating.textContent = data.rating;
+
+    popupText.textContent = data.text;
+    popupImage.src = data.image;
+
+    popup.style.display = "block";
+});
