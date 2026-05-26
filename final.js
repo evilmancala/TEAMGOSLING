@@ -41,6 +41,17 @@ let genreData = {
     
     }
 };
+
+let genreData2 = {
+    action: {
+        title: "Barbie",
+        year: "2023",
+        rating: "PG-13",
+        text: "'Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.'” - IMDb",
+        image: "https://i.ebayimg.com/images/g/F4UAAOSwjHJktzer/s-l1600.webp"
+    
+    }
+};
 let movieTitle = document.getElementById("movieTitle");
 let movieYear = document.getElementById("movieYear");
 let movieRating = document.getElementById("movieRating");
