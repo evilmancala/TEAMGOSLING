@@ -61,7 +61,6 @@ let genreData = {
  
 };
     
-};
 let movieTitle = document.getElementById("movieTitle");
 let movieYear = document.getElementById("movieYear");
 let movieRating = document.getElementById("movieRating");
@@ -77,6 +76,8 @@ genreSelect.addEventListener("change", function () {
     popupText.textContent = data.text;
     popupImage.src = data.image;
 
+    popup.style.display = "block";
+});
     popup.style.display = "block";
 });
 
