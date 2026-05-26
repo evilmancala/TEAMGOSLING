@@ -43,7 +43,7 @@ let genreData = {
 };
 
 let genreData2 = {
-    action: {
+    barbie: {
         title: "Barbie",
         year: "2023",
         rating: "PG-13",
@@ -68,4 +68,20 @@ genreSelect.addEventListener("change", function () {
     popupImage.src = data.image;
 
     popup.style.display = "block";
+
+ let value = genreSelect.value;
+
+    let data2 = genreData2[value];
+
+    movieTitle.textContent = data2.title;
+    movieYear.textContent = data2.year;
+    movieRating.textContent = data2.rating;
+
+    popupText.textContent = data2.text;
+    popupImage.src = data2.image;
+
+    popup.style.display = "block";
 });
+
+
+    
