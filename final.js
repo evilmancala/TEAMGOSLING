@@ -21,6 +21,17 @@ genreSelect.addEventListener("change", function () {
     popup.style.display = "block";
 });
 
+genreSelect.addEventListener("change", function () {
+    let value = genreSelect2.value;
+    let data = genreData2[value];
+
+    popupText.textContent = data2.text;
+    popupImage.src = data2.image;
+
+    popup.style.display = "block";
+});
+
+
 popup.onclick = function () {
     popup.style.display = "none";
 };
@@ -38,19 +49,18 @@ let genreData = {
         rating: "PG-13",
         text: "'A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.' - IMDb",
         image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
-    
-    }
-};
-
-let genreData2 = {
-    barbie: {
+    },
+        barbie: {
         title: "Barbie",
         year: "2023",
         rating: "PG-13",
         text: "'Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.'” - IMDb",
         image: "https://i.ebayimg.com/images/g/F4UAAOSwjHJktzer/s-l1600.webp"
+     },
     
-    }
+ 
+};
+    
 };
 let movieTitle = document.getElementById("movieTitle");
 let movieYear = document.getElementById("movieYear");
@@ -66,19 +76,6 @@ genreSelect.addEventListener("change", function () {
 
     popupText.textContent = data.text;
     popupImage.src = data.image;
-
-    popup.style.display = "block";
-
- let value = genreSelect.value;
-
-    let data2 = genreData2[value];
-
-    movieTitle.textContent = data2.title;
-    movieYear.textContent = data2.year;
-    movieRating.textContent = data2.rating;
-
-    popupText.textContent = data2.text;
-    popupImage.src = data2.image;
 
     popup.style.display = "block";
 });
