@@ -95,8 +95,9 @@ let genreData = {
         rating: "PG-13",
         text: "'Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg"
-} 
+},
 };
+
 let movieTitle = document.getElementById("movieTitle");
 let movieYear = document.getElementById("movieYear");
 let movieRating = document.getElementById("movieRating");
