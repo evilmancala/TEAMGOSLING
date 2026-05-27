@@ -198,3 +198,19 @@ margin-bottom: 75px;
     border-radius: 8px;
     font-size: 0.9rem;
 }
+
+#ratingsTitle {
+    margin: 0;
+    color: rgb(83, 37, 18);
+}
+
+#imdbRating,
+#rottenRating,
+#letterboxdRating {
+    margin: 2px 0;
+}
+
+#popupBox {
+    padding-top: 10px;   /* reduce top spacing */
+    padding-bottom: 20px;
+}
