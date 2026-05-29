@@ -113,6 +113,7 @@ const elements = {
   rottenRating: document.getElementById("rottenRating"),
   letterboxdRating: document.getElementById("letterboxdRating"),
   closeBtn: document.getElementById("closePopup"),
+  tadasound: document.getElementById("tadaSound"), 
 };
 
 
@@ -141,6 +142,9 @@ elements.genreSelect.addEventListener("change", () => {
   if (!data) return; // guard against empty/invalid selection
   updateMovieInfo(data);
   showPopup();
+  elements.tadaSound.currenttimeTime = 0;
+  element.tadaSound.play();
+  
 });
 
 elements.popup.addEventListener("click", hidePopup);
