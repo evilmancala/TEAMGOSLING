@@ -1,63 +1,14 @@
-let startButton = document.getElementById("startBtn");
-let genreSection = document.getElementById("genreSection");
-
-startButton.onclick = function () {
-    genreSection.style.display = "block";
-    startButton.style.display = "none";
-}
-
-let genreSelect = document.getElementById("genres");
-let popup = document.getElementById("popupBox");
-let popupText = document.getElementById("popupText");
-let popupImage = document.getElementById("popupImage");
-
-let movieTitle = document.getElementById("movieTitle");
-let movieYear = document.getElementById("movieYear");
-let movieRating = document.getElementById("movieRating");
-
-let imdbRating = document.getElementById("imdbRating");
-let rottenRating = document.getElementById("rottenRating");
-let letterboxdRating = document.getElementById("letterboxdRating");
-
-genreSelect.addEventListener("change", function () {
-    let value = genreSelect.value;
-    let data = genreData[value];
-
-    movieTitle.textContent = data.title;
-    movieYear.textContent = data.year;
-    movieRating.textContent = data.rating;
-
-    imdbRating.innerHTML = "<strong>IMDb:</strong> " + data.imdb;
-    rottenRating.innerHTML = "<strong>Rotten Tomatoes:</strong> " + data.rotten;
-    letterboxdRating.innerHTML = "<strong>Letterboxd:</strong> " + data.letterboxd;
-    popupText.textContent = data.text;
-    popupImage.src = data.image;
-
-    popup.style.display = "block";
-});
-
-popup.onclick = function () {
-    popup.style.display = "none";
-};
-
-let closeBtn = document.getElementById("closePopup");
-
-closeBtn.onclick = function () {
-    popup.style.display = "none";
-};
-
-let genreData = {
+const genreData = {
     action: {
-        title: "The Fall Guy",
-        year: "2024",
+        title: "The Fall Guy", 
+        year: "2024", 
         rating: "PG-13",
-        imdb: "7.0/10",
-        rotten: "82%",
+        imdb: "7.0/10", 
+        rotten: "82%", 
         letterboxd: "3.5/5",
-        text: "'A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.' - IMDb",
-        image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
+        text: "'A stuntman, fresh off an almost career-ending accident...' - IMDb",
+        image: "https://mediaproxy.tvtropes.org/..."
     },
-
     barbie: {
         title: "Barbie",
         year: "2023",
@@ -146,3 +97,51 @@ let genreData = {
         image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg"
     }
 };
+
+
+const elements = {
+  startButton: document.getElementById("startBtn"),
+  genreSection: document.getElementById("genreSection"),
+  genreSelect: document.getElementById("genres"),
+  popup: document.getElementById("popupBox"),
+  popupText: document.getElementById("popupText"),
+  popupImage: document.getElementById("popupImage"),
+  movieTitle: document.getElementById("movieTitle"),
+  movieYear: document.getElementById("movieYear"),
+  movieRating: document.getElementById("movieRating"),
+  imdbRating: document.getElementById("imdbRating"),
+  rottenRating: document.getElementById("rottenRating"),
+  letterboxdRating: document.getElementById("letterboxdRating"),
+  closeBtn: document.getElementById("closePopup"),
+};
+
+
+function showPopup() { elements.popup.style.display = "block"; }
+function hidePopup()  { elements.popup.style.display = "none"; }
+
+function updateMovieInfo(data) {
+  elements.movieTitle.textContent = data.title;
+  elements.movieYear.textContent = data.year;
+  elements.movieRating.textContent = data.rating;
+  elements.imdbRating.innerHTML = `<strong>IMDb:</strong> ${data.imdb}`;
+  elements.rottenRating.innerHTML = `<strong>Rotten Tomatoes:</strong> ${data.rotten}`;
+  elements.letterboxdRating.innerHTML = `<strong>Letterboxd:</strong> ${data.letterboxd}`;
+  elements.popupText.textContent = data.text;
+  elements.popupImage.src = data.image;
+}
+
+
+elements.startButton.addEventListener("click", () => {
+  elements.genreSection.style.display = "block";
+  elements.startButton.style.display  = "none";
+});
+
+elements.genreSelect.addEventListener("change", () => {
+  const data = genreData[elements.genreSelect.value];
+  if (!data) return; // guard against empty/invalid selection
+  updateMovieInfo(data);
+  showPopup();
+});
+
+elements.popup.addEventListener("click", hidePopup);
+elements.closeBtn.addEventListener("click", hidePopup);
