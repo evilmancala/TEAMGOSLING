@@ -113,7 +113,7 @@ const elements = {
   rottenRating: document.getElementById("rottenRating"),
   letterboxdRating: document.getElementById("letterboxdRating"),
   closeBtn: document.getElementById("closePopup"),
-  tadasound: document.getElementById("tadaSound"), 
+  tadaSound: document.getElementById("tadaSound"), 
 };
 
 
