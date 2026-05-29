@@ -6,7 +6,7 @@ const genreData = {
         imdb: "7.0/10", 
         rotten: "82%", 
         letterboxd: "3.5/5",
-        text: "'A stuntman, fresh off an almost career-ending accident...' - IMDb",
+        text: "‘A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.’ - IMDb",
         image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
     },
     barbie: {
