@@ -7,7 +7,7 @@ const genreData = {
         rotten: "82%", 
         letterboxd: "3.5/5",
         text: "'A stuntman, fresh off an almost career-ending accident...' - IMDb",
-        image: "https://image.tmdb.org/t/p/original/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg"
+        image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
     },
     barbie: {
         title: "Barbie",
