@@ -84,7 +84,7 @@ const genreData = {
         rotten: "54%",
         letterboxd: "3.9/5",
         text: "'An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.' - IMDb",
-        image: "hhttps://i.ebayimg.com/images/g/proAAOxy-1lRIBE9/s-l1600.webp",
+        image: "https://i.ebayimg.com/images/g/proAAOxy-1lRIBE9/s-l1600.webp",
         trailer: "https://youtu.be/BjJcYdEOI0k?si=GNo6FCAuHuU7DNXS"
     },
     scifi: {
