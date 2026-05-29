@@ -7,7 +7,7 @@ const genreData = {
         rotten: "82%", 
         letterboxd: "3.5/5",
         text: "'A stuntman, fresh off an almost career-ending accident...' - IMDb",
-        image: "https://www.movieposters.com/cdn/shop/files/scan_35b6fe4a-0c3d-4d2d-9d22-ddb7a4ad576c_1024x1024.jpg?v=1762974488"
+        image: "https://image.tmdb.org/t/p/original/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg"
     },
     barbie: {
         title: "Barbie",
