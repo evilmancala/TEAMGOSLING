@@ -6,8 +6,9 @@ const genreData = {
         imdb: "7.0/10", 
         rotten: "82%", 
         letterboxd: "3.5/5",
-        text: "‘A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.’ - IMDb",
-        image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg"
+        text: "'A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.' - IMDb",
+        image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg",
+        trailer: "https://youtu.be/j7jPnwVGdZ8?si=N8gx3l1EgQYeV4PC"
     },
     barbie: {
         title: "Barbie",
@@ -17,9 +18,9 @@ const genreData = {
         rotten: "88%",
         letterboxd: "3.9/5",
         text: "'Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.' - IMDb",
-        image: "https://i.ebayimg.com/images/g/F4UAAOSwjHJktzer/s-l1600.webp"
+        image: "https://i.ebayimg.com/images/g/F4UAAOSwjHJktzer/s-l1600.webp",
+        trailer: "https://youtu.be/pBk4NYhWNMM?si=EXeceQN98B_LePMN"
     },
-
     comedy: {
         title: "Lars and the Real Girl",
         year: "2007",
@@ -27,10 +28,10 @@ const genreData = {
         imdb: "7.3/10",
         rotten: "81%",
         letterboxd: "3.7/5",
-        text: "‘A delusional young man strikes up an unconventional relationship with a doll he finds on the Internet.’ - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BZThiOTA4N2UtNzJiYS00MDI0LWI3OWItYzYxYzU3M2YwM2M4XkEyXkFqcGc@._V1_.jpg"
+        text: "'A delusional young man strikes up an unconventional relationship with a doll he finds on the Internet.' - IMDb",
+        image: "https://m.media-amazon.com/images/M/MV5BZThiOTA4N2UtNzJiYS00MDI0LWI3OWItYzYxYzU3M2YwM2M4XkEyXkFqcGc@._V1_.jpg",
+        trailer: "https://youtu.be/XNcs9DrKYRU?si=X3LsWIyBPhzYpSXb"
     },
-
     thriller: {
         title: "The Gray Man",
         year: "2022",
@@ -39,9 +40,9 @@ const genreData = {
         rotten: "45%",
         letterboxd: "2.9/5",
         text: "'When the CIA's most skilled operative accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head.' - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg"
+        image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
+        trailer: "https://youtu.be/BmllggGO4pM?si=AKk12qjXjUBBsInv"
     },
-
     crime: {
         title: "Drive",
         year: "2011",
@@ -49,21 +50,21 @@ const genreData = {
         imdb: "7.8/10",
         rotten: "93%",
         letterboxd: "3.9/5",
-        text: "‘A mysterious Hollywood action film stuntman gets in trouble with gangsters when he helps his neighbor's husband rob a pawn shop.’ - IMDb",
-        image: "https://upload.wikimedia.org/wikipedia/en/1/13/Drive2011Poster.jpg"
+        text: "'A mysterious Hollywood action film stuntman gets in trouble with gangsters when he helps his neighbor's husband rob a pawn shop.' - IMDb",
+        image: "https://upload.wikimedia.org/wikipedia/en/1/13/Drive2011Poster.jpg",
+        trailer: "https://youtu.be/KBiOF3y1W0Y?si=jiz9EBUVdLLDzqDq"
     },
-
     musical: {
-        title: "La La Land",
-        year: "2016",
-        rating: "PG-13",
-        imdb: "8.0/10",
-        rotten: "91%",
-        letterboxd: "4.1/5",
-        text: "‘When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.’ - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg"
+    title: "La La Land",
+    year: "2016",
+    rating: "PG-13",
+    imdb: "8.0/10",
+    rotten: "91%",
+    letterboxd: "4.1/5",
+    text: "'When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.' - IMDb",
+    image: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
+    trailer: "https://youtu.be/0pdqf4P9MB8?si=hcWRyV4UWYDjoeRd"
     },
-
     mystery: {
         title: "The Nice Guys",
         year: "2016",
@@ -71,10 +72,10 @@ const genreData = {
         imdb: "7.4/10",
         rotten: "91%",
         letterboxd: "3.8/5",
-        text: "‘In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.’ - IMDb",
-        image: "https://upload.wikimedia.org/wikipedia/en/e/e9/The_Nice_Guys_poster.png"
+        text: "'In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.' - IMDb",
+        image: "https://upload.wikimedia.org/wikipedia/en/e/e9/The_Nice_Guys_poster.png",
+        trailer: "https://youtu.be/GQR5zsLHbYw?si=mw6-1wNTbJVG19Jb"
     },
-
     romance: {
         title: "The Notebook",
         year: "2004",
@@ -82,10 +83,10 @@ const genreData = {
         imdb: "7.8/10",
         rotten: "54%",
         letterboxd: "3.9/5",
-        text: "‘An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.’ - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThmZDktNzFlMzA2MWRmYWQ0XkEyXkFqcGc@._V1_.jpg"
+        text: "'An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.' - IMDb",
+        image: "https://m.media-amazon.com/images/M/MV5BZjE0ZjgzMzYtMTAxYi00NGMzLThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
+        trailer: "https://youtu.be/BjJcYdEOI0k?si=GNo6FCAuHuU7DNXS"
     },
-
     scifi: {
         title: "Blade Runner 2049",
         year: "2017",
@@ -93,8 +94,9 @@ const genreData = {
         imdb: "8.0/10",
         rotten: "88%",
         letterboxd: "4.1/5",
-        text: "‘Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard.’ - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg"
+        text: "'Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard.' - IMDb",
+        image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg",
+        trailer: "https://youtu.be/gCcx85zbxz4?si=P4yPEYLCXfDKCydF"
     }
 };
 
@@ -112,6 +114,7 @@ const elements = {
   imdbRating: document.getElementById("imdbRating"),
   rottenRating: document.getElementById("rottenRating"),
   letterboxdRating: document.getElementById("letterboxdRating"),
+  trailerLink: document.getElementById("trailerLink"),
   closeBtn: document.getElementById("closePopup"),
   tadaSound: document.getElementById("tadaSound"), 
 };
