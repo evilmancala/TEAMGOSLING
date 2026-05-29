@@ -116,6 +116,7 @@ const elements = {
   letterboxdRating: document.getElementById("letterboxdRating"),
   trailerLink: document.getElementById("trailerLink"),
   closeBtn: document.getElementById("closePopup"),
+  tadaSound: document.getElementById("tadaSound")
 };
 
 
@@ -154,6 +155,9 @@ elements.genreSelect.addEventListener("change", () => {
   if (!data) return;
   updateMovieInfo(data);
   showPopup();
+
+  elements.tadaSound.currentTime = 0;
+  elements.tadaSound.play();
 });
 
 elements.popup.addEventListener("click", hidePopup);
