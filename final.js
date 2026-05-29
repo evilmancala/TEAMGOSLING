@@ -123,13 +123,6 @@ const elements = {
 function showPopup() { elements.popup.style.display = "block"; }
 function hidePopup()  { elements.popup.style.display = "none"; }
 
-function updateTrailerLink(trailerUrl) {
-  if (trailerUrl) {
-    elements.trailerLink.href = trailerUrl;
-    elements.trailerLink.style.display = "inline-block";
-  } else {
-    elements.trailerLink.style.display = "none";
-  }
 }
 
 function updateMovieInfo(data) {
