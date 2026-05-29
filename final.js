@@ -156,7 +156,7 @@ elements.genreSelect.addEventListener("change", () => {
   updateMovieInfo(data);
   showPopup();
 
-  elements.tadaSound.currentTime = 0;
+  elements.tadaSound.currentTime = 4;
   elements.tadaSound.play();
 });
 
