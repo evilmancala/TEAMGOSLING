@@ -101,6 +101,49 @@ const genreData = {
 };
 
 
+const quizData = [
+  {
+    question: "What year was Ryan Gosling born?",
+    choices: ["1978", "1980", "1982", "1975"],
+    answer: "1980"
+  },
+  {
+    question: "Which Canadian city is Ryan Gosling from?",
+    choices: ["Toronto", "Vancouver", "London", "Ottawa"],
+    answer: "London"
+  },
+  {
+    question: "What Disney program was Ryan Gosling a cast member of as a child?",
+    choices: ["Disney Channel Games", "All That", "The Mickey Mouse Club", "Kids Incorporated"],
+    answer: "The Mickey Mouse Club"
+  },
+  {
+    question: "Which movie earned Ryan Gosling his first Oscar nomination?",
+    choices: ["La La Land", "Half Nelson", "Blue Valentine", "Drive"],
+    answer: "Half Nelson"
+  },
+  {
+    question: "What instrument does Ryan Gosling play in La La Land?",
+    choices: ["Guitar", "Violin", "Drums", "Piano"],
+    answer: "Piano"
+  },
+  {
+    question: "In Barbie, what is Ken's catchphrase obsession?",
+    choices: ["Surfing", "Horses", "Cars", "Chess"],
+    answer: "Horses"
+  },
+  {
+    question: "Which film features Ryan Gosling as a stuntman?",
+    choices: ["The Gray Man", "The Nice Guys", "The Fall Guy", "Drive"],
+    answer: "The Fall Guy"
+  },
+  {
+    question: "Who did Ryan Gosling co-star with in The Notebook?",
+    choices: ["Scarlett Johansson", "Rachel McAdams", "Emma Stone", "Eva Mendes"],
+    answer: "Rachel McAdams"
+  },
+];
+
 const elements = {
   startButton: document.getElementById("startBtn"),
   genreSection: document.getElementById("genreSection"),
@@ -162,3 +205,89 @@ elements.genreSelect.addEventListener("change", () => {
 
 elements.popup.addEventListener("click", hidePopup);
 elements.closeBtn.addEventListener("click", hidePopup);
+
+let currentQuestion = 0;
+let score = 0;
+
+const quizElements = {
+    section: document.getElementById("quizSection"),
+    question: document.getElementById("quizQuestion"),
+    choices: document.getElementById("quizChoices"),
+    feedback: document.getElementById("quizFeedback"),
+    score: document.getElementById("quizScore"),
+    nextBtn: document.getElementById("nextBtn"),
+    restartBtn: document.getElementById("restartBtn"),
+    quizBtn: document.getElementById("quizBtn"),
+};
+
+function startQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    quizElements.section.style.display = "block";
+    quizElements.restartBtn.style.display = "none";
+    quizElements.score.textContent = "";
+    quizElements.quizBtn.style.display = "none";
+    loadQuestion();
+}
+
+function loadQuestion() {
+    const q = quizData[currentQuestion];
+
+    quizElements.feedback.textContent = "";
+    quizElements.nextBtn.style.display = "none";
+    quizElements.question.textContent = `Q${currentQuestion + 1}: ${q.question}`;
+    quizElements.choices.innerHTML = "";
+
+    q.choices.forEach(choice => {
+        const btn = document.createElement("button");
+        btn.textContent = choice;
+        btn.addEventListener("click", () => handleAnswer(btn, choice, q.answer));
+        quizElements.choices.appendChild(btn);
+    });
+}
+
+function handleAnswer(btn, selected, correct) {
+    // disable all buttons after answering
+    quizElements.choices.querySelectorAll("button").forEach(b => b.disabled = true);
+
+    if (selected === correct) {
+        score++;
+        btn.style.backgroundColor = "green";
+        quizElements.feedback.textContent = "✅ Correct!";
+    } else {
+        btn.style.backgroundColor = "red";
+        quizElements.feedback.textContent = `❌ Wrong! The answer was: ${correct}`;
+        // highlight the correct answer
+        quizElements.choices.querySelectorAll("button").forEach(b => {
+        if (b.textContent === correct) b.style.backgroundColor = "green";
+        });
+    }
+
+    if (currentQuestion + 1 < quizData.length) {
+        quizElements.nextBtn.style.display = "inline-block";
+    } else {
+        // show feedback first, then reveal the results button
+        const resultsBtn = document.createElement("button");
+        resultsBtn.textContent = "See Your Results";
+        resultsBtn.addEventListener("click", showResults);
+        quizElements.feedback.appendChild(document.createElement("br"));
+        quizElements.feedback.appendChild(resultsBtn);
+    }
+}
+
+function showResults() {
+    quizElements.question.textContent = "Quiz Complete!";
+    quizElements.choices.innerHTML = "";
+    quizElements.nextBtn.style.display = "none";
+    quizElements.feedback.textContent = "";
+    quizElements.score.textContent = `You scored ${score} out of ${quizData.length}!`;
+    quizElements.restartBtn.style.display = "inline-block";
+}
+
+
+quizElements.quizBtn.addEventListener("click", startQuiz);
+quizElements.nextBtn.addEventListener("click", () => {
+    currentQuestion++;
+    loadQuestion();
+});
+quizElements.restartBtn.addEventListener("click", startQuiz);
