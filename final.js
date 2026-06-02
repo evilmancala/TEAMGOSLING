@@ -168,7 +168,8 @@ const elements = {
   lalaSong: document.getElementById("lalaSong"),
   niceguySong: document.getElementById("niceguySong"),
   notebookSong: document.getElementById("notebookSong"),
-  bladeSong": document.getElementById("bladeSong")
+  bladeSong": document.getElementById("bladeSong"),
+
 };
 
 
