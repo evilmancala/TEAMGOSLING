@@ -6,26 +6,26 @@
 body {
     background-image: url('background.png');
     color: rgb(255, 240, 206);
-    font-family: Arial, sans-serif;
+    font-family: Arial, Moji;
     text-align: center;
     padding-top: 0px;
 }
 
 h1 {
     font-size: 5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Moji;
    margin-top: 10px;  
     margin-bottom: 5px; 
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Moji;
 }
 
 button {
     padding: 15px 30px;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
     font: bold;
     background-color: rgb(77, 25, 3);
     color: rgb(255, 241, 230);
@@ -42,7 +42,7 @@ button:hover {
 #startBtn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
     font: bold;
     background-color: rgb(77, 25, 3);
     color: rgb(255, 241, 230);
@@ -55,7 +55,7 @@ button:hover {
 #quizBtn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
     font: bold;
     background-color: rgb(77, 25, 3);
     color: rgb(255, 241, 230);
@@ -68,7 +68,7 @@ button:hover {
 #nextBtn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
     font: bold;
     background-color: rgb(77, 25, 3);
     color: rgb(255, 241, 230);
@@ -81,7 +81,7 @@ button:hover {
 #restartBtn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
     font: bold;
     background-color: rgb(77, 25, 3);
     color: rgb(255, 241, 230);
