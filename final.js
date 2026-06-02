@@ -187,7 +187,7 @@ function stopAllSongs() {
   ].forEach(song => {
     if (song) {
       song.pause();
-      song.currentTime = 0;
+      song.currentTime = 5;
     }
   });
 }
@@ -234,7 +234,7 @@ elements.genreSelect.addEventListener("change", () => {
   updateMovieInfo(data);
   showPopup();
 
-  elements.tadaSound.currentTime = 0;
+  elements.tadaSound.currentTime = 4;
   elements.tadaSound.play();
 
   stopAllSongs();
