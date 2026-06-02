@@ -3,25 +3,23 @@
   src: url(NicoMoji-Regular.ttf); 
 }
 
-* {font-family: Moji;}
-
 body {
     background-image: url('background.png');
     color: rgb(255, 240, 206);
-    font-family: Arial, Moji;
+    font-family: Moji, sans-serif;
     text-align: center;
     padding-top: 0px;
 }
 
 h1 {
     font-size: 5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, Moji;
+    font-family: Moji, 'Arial Narrow', Arial, sans-serif;
    margin-top: 10px;  
     margin-bottom: 5px; 
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Moji;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
