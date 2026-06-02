@@ -173,6 +173,25 @@ const elements = {
 
 };
 
+function stopAllSongs() {
+  [
+    elements.fallSong,
+    elements.barbieSong,
+    elements.larsSong,
+    elements.driveSong,
+    elements.lalaSong,
+    elements.niceguySong,
+    elements.notebookSong,
+    elements.bladeSong,
+    elements.graymanSong
+  ].forEach(song => {
+    if (song) {
+      song.pause();
+      song.currentTime = 0;
+    }
+  });
+}
+
 
 function showPopup() { elements.popup.style.display = "block"; }
 function hidePopup()  { elements.popup.style.display = "none"; }
@@ -205,13 +224,56 @@ elements.startButton.addEventListener("click", () => {
 });
 
 elements.genreSelect.addEventListener("change", () => {
-  const data = genreData[elements.genreSelect.value];
+  const genre = elements.genreSelect.value;
+  const data = genreData[genre];
+
   if (!data) return;
+
   updateMovieInfo(data);
   showPopup();
 
-  elements.tadaSound.currentTime = 4;
+  elements.tadaSound.currentTime = 0;
   elements.tadaSound.play();
+
+  stopAllSongs();
+
+  switch (genre) {
+    case "action":
+      elements.fallSong.play();
+      break;
+
+    case "barbie":
+      elements.barbieSong.play();
+      break;
+
+    case "comedy":
+      elements.larsSong.play();
+      break;
+
+    case "crime":
+      elements.driveSong.play();
+      break;
+
+    case "musical":
+      elements.lalaSong.play();
+      break;
+
+    case "mystery":
+      elements.niceguySong.play();
+      break;
+
+    case "romance":
+      elements.notebookSong.play();
+      break;
+
+    case "scifi":
+      elements.bladeSong.play();
+      break;
+
+    case "thriller":
+      elements.graymanSong.play();
+      break;
+  }
 });
 
 elements.popup.addEventListener("click", hidePopup);
