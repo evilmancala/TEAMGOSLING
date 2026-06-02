@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Moji; 
+  src: url(NicoMoji-Regular.ttf); 
+}
+
 body {
     background-image: url('background.png');
     color: rgb(255, 240, 206);
