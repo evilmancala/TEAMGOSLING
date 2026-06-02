@@ -95,7 +95,7 @@ const genreData = {
         imdb: "6.5/10",
         rotten: "45%",
         letterboxd: "2.8/5",
-        text: "'When the CIA's most skilled operative, whose true identity is known to none, accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt by international assassins.' - IMDb",
+        text: "'When the CIA's most skilled operative accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
         trailer: "https://youtu.be/BmllggGO4pM?si=CleiVw1LyfqX0mYd"
     }
