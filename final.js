@@ -97,6 +97,17 @@ const genreData = {
         text: "'Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg",
         trailer: "https://youtu.be/gCcx85zbxz4?si=P4yPEYLCXfDKCydF"
+     },
+    thriller: {
+        title: "The Gray Man",
+        year: "2022",
+        rating: "R",
+        imdb: "6.5/10",
+        rotten: "45%",
+        letterboxd: "2.8/5",
+        text: "'When the CIA's most skilled operative, whose true identity is known to none, accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt by international assassins.' - IMDb",
+        image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
+        trailer: "https://youtu.be/BmllggGO4pM?si=CleiVw1LyfqX0mYd"
     }
 };
 
