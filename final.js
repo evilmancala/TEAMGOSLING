@@ -31,17 +31,7 @@ const genreData = {
         text: "'A delusional young man strikes up an unconventional relationship with a doll he finds on the Internet.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BZThiOTA4N2UtNzJiYS00MDI0LWI3OWItYzYxYzU3M2YwM2M4XkEyXkFqcGc@._V1_.jpg",
         trailer: "https://youtu.be/XNcs9DrKYRU?si=X3LsWIyBPhzYpSXb"
-    },
-    thriller: {
-        title: "The Gray Man",
-        year: "2022",
-        rating: "PG-13",
-        imdb: "6.5/10",
-        rotten: "45%",
-        letterboxd: "2.9/5",
-        text: "'When the CIA's most skilled operative accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head.' - IMDb",
-        image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
-        trailer: "https://youtu.be/BmllggGO4pM?si=AKk12qjXjUBBsInv"
+   
     },
     crime: {
         title: "Drive",
