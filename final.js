@@ -194,7 +194,9 @@ function stopAllSongs() {
 
 
 function showPopup() { elements.popup.style.display = "block"; }
-function hidePopup()  { elements.popup.style.display = "none"; }
+
+function hidePopup() { elements.popup.style.display = "none";
+  stopAllSongs(); }
 
 function updateTrailerLink(trailerUrl) {
   if (trailerUrl) {
