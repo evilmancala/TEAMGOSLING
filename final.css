@@ -3,7 +3,7 @@
   src: url(NicoMoji-Regular.ttf); 
 }
 
-h1 {font-family: Moji;}
+* {font-family: Moji;}
 
 body {
     background-image: url('background.png');
