@@ -160,7 +160,15 @@ const elements = {
   letterboxdRating: document.getElementById("letterboxdRating"),
   trailerLink: document.getElementById("trailerLink"),
   closeBtn: document.getElementById("closePopup"),
-  tadaSound: document.getElementById("tadaSound")
+  tadaSound: document.getElementById("tadaSound"),
+  fallSong: document.getElementById("fallSong"),
+  barbieSong: document.getElementById("barbieSong"),
+  larsSong: document.getElementById("larsSong"),
+  driveSong: document.getElementById("driveSong"),
+  lalaSong: document.getElementById("lalaSong"),
+  niceguySong: document.getElementById("niceguySong"),
+  notebookSong: document.getElementById("notebookSong"),
+  bladeSong": document.getElementById("bladeSong"),
 };
 
 
