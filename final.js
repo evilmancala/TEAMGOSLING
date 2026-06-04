@@ -45,15 +45,15 @@ const genreData = {
         trailer: "https://youtu.be/KBiOF3y1W0Y?si=jiz9EBUVdLLDzqDq"
     },
     musical: {
-    title: "La La Land",
-    year: "2016",
-    rating: "PG-13",
-    imdb: "8.0/10",
-    rotten: "91%",
-    letterboxd: "4.1/5",
-    text: "'When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.' - IMDb",
-    image: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
-    trailer: "https://youtu.be/0pdqf4P9MB8?si=hcWRyV4UWYDjoeRd"
+        title: "La La Land",
+        year: "2016",
+        rating: "PG-13",
+        imdb: "8.0/10",
+        rotten: "91%",
+        letterboxd: "4.1/5",
+        text: "'When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.' - IMDb",
+        image: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
+        trailer: "https://youtu.be/0pdqf4P9MB8?si=hcWRyV4UWYDjoeRd"
     },
     mystery: {
         title: "The Nice Guys",
