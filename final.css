@@ -64,8 +64,6 @@ button:hover {
     border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
-   position: fixed;
-    z-index: 1000;
 }
 
 #nextBtn {
@@ -132,6 +130,7 @@ button:hover {
 
 .ryan-gallery {
     position: fixed;
+    z-index: -1;
     top: 65%;
     left: 0;
     width: 100%;
@@ -140,6 +139,7 @@ button:hover {
 
 .ryan-gallery img:first-child {
     position: absolute;
+  z-index: -1;
     left: 0;
     width: 600px;
     height: auto;
@@ -148,6 +148,7 @@ button:hover {
 
 .ryan-gallery img:last-child {
     position: absolute;
+  z-index: -1;
     right: 0;
     width: 700px;
     height: auto;
@@ -155,6 +156,7 @@ button:hover {
 
 .ryan-gallery {
     display: flex;
+  z-index: -1;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px; 
