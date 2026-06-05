@@ -34,6 +34,7 @@ button {
     cursor: pointer;
     margin-top: 20px;
     z-index: 100
+    position: absolute
 }
 
 button:hover {
@@ -129,7 +130,7 @@ button:hover {
 }
 
 .ryan-gallery {
-    position: fixed;
+    position: absolute;
     top: 65%;
     left: 0;
     width: 100%;
@@ -155,6 +156,7 @@ button:hover {
 }
 
 .ryan-gallery {
+   position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
