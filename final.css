@@ -64,6 +64,8 @@ button:hover {
     border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
+   position: fixed;
+    z-index: 1000;
 }
 
 #nextBtn {
