@@ -298,7 +298,7 @@ const quizElements = {
 
 const resultImages = {
     evil: "evilryangosling2.jpeg",
-    neutral: "ryangosline1.jpeg",
+    neutral: "ryangosling1.jpeg",
     happy: "happyryangosling3.jpeg",
 };
 
