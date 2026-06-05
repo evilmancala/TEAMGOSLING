@@ -287,3 +287,5 @@ margin-bottom: 75px;
     padding-top: 10px;   /* reduce top spacing */
     padding-bottom: 20px;
 }
+
+#quizsection { z-index: 10;}
