@@ -285,6 +285,15 @@ margin-bottom: 75px;
 }
 
 #popupBox {
-    padding-top: 10px;   /* reduce top spacing */
+    padding-top: 10px;   
     padding-bottom: 20px;
 }
+
+#genreImage {
+    position: absolute;
+    right: -180px;
+    transform: translateY(-50%);
+    width: 250px;
+    height: auto;
+}
+
