@@ -31,6 +31,7 @@ const genreData = {
         letterboxd: "3.7/5",
         text: "'A delusional young man strikes up an unconventional relationship with a doll he finds on the Internet.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BZThiOTA4N2UtNzJiYS00MDI0LWI3OWItYzYxYzU3M2YwM2M4XkEyXkFqcGc@._V1_.jpg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/larschibi.png?raw=true",
         trailer: "https://youtu.be/XNcs9DrKYRU?si=X3LsWIyBPhzYpSXb"
    
     },
