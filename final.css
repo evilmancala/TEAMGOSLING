@@ -56,7 +56,7 @@ button:hover {
 
 #quizBtn {
     position: absolute;
-    z-index: 1000
+    z-index: 1000;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
