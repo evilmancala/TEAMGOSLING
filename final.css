@@ -201,6 +201,14 @@ button:hover {
   
 }
 
+#genreImage {
+    position: absolute;
+    right: -180px;
+    transform: translateY(-50%);
+    width: 250px;
+    height: auto;
+  
+}
 .closeBtn {
     position: absolute;
     top: 10px;
@@ -300,3 +308,4 @@ margin-bottom: 75px;
 }
 
 .quiz { z-index: 100;}
+
