@@ -19,6 +19,7 @@ const genreData = {
         letterboxd: "3.9/5",
         text: "'Barbie and Ken are having the time of their lives in the seemingly perfect world of Barbie Land. However, when they get a chance to go to the outside world, they soon discover the joys and perils of living among regular humans.' - IMDb",
         image: "https://i.ebayimg.com/images/g/F4UAAOSwjHJktzer/s-l1600.webp",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/kenchibi.png?raw=true",
         trailer: "https://youtu.be/pBk4NYhWNMM?si=EXeceQN98B_LePMN"
     },
     comedy: {
@@ -42,6 +43,7 @@ const genreData = {
         letterboxd: "3.9/5",
         text: "'A mysterious Hollywood action film stuntman gets in trouble with gangsters when he helps his neighbor's husband rob a pawn shop.' - IMDb",
         image: "https://upload.wikimedia.org/wikipedia/en/1/13/Drive2011Poster.jpg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/drivechibi.png?raw=true",
         trailer: "https://youtu.be/KBiOF3y1W0Y?si=jiz9EBUVdLLDzqDq"
     },
     musical: {
@@ -86,6 +88,7 @@ const genreData = {
         letterboxd: "4.1/5",
         text: "'Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/bladerunnerchibipink.png?raw=true",
         trailer: "https://youtu.be/gCcx85zbxz4?si=P4yPEYLCXfDKCydF"
      },
     thriller: {
@@ -152,6 +155,7 @@ const elements = {
   popup: document.getElementById("popupBox"),
   popupText: document.getElementById("popupText"),
   popupImage: document.getElementById("popupImage"),
+  genreImage: document.getElementById("genreImage"),
   movieTitle: document.getElementById("movieTitle"),
   movieYear: document.getElementById("movieYear"),
   movieRating: document.getElementById("movieRating"),
@@ -216,6 +220,7 @@ function updateMovieInfo(data) {
   elements.letterboxdRating.innerHTML = `<strong>Letterboxd:</strong> ${data.letterboxd}`;
   elements.popupText.textContent = data.text;
   elements.popupImage.src = data.image;
+  elements.genreImage.src = data.genrePng;
   updateTrailerLink(data.trailer);
 }
 
