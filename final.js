@@ -376,7 +376,7 @@ function showResults() {
         imageKey = "neutral";
     }
 
-    quizElements.resultImage.src = resultImages[imagesKey];
+    quizElements.resultImage.src = resultImages[imageKey];
     quizElements.resultImage.style.display = "block";
 }
 
