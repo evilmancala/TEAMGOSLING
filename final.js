@@ -293,6 +293,13 @@ const quizElements = {
     nextBtn: document.getElementById("nextBtn"),
     restartBtn: document.getElementById("restartBtn"),
     quizBtn: document.getElementById("quizBtn"),
+    resultImage: document.getElementById("quizResultImage"),
+};
+
+const resultImages = {
+    evil: "evilryangosling2.jpeg",
+    neutral: "ryangosline1.jpeg",
+    happy: "happyryangosling3.jpeg",
 };
 
 function startQuiz() {
@@ -302,6 +309,7 @@ function startQuiz() {
     quizElements.restartBtn.style.display = "none";
     quizElements.score.textContent = "";
     quizElements.quizBtn.style.display = "none";
+    quizElements.resultImage.style.display = "none";
     loadQuestion();
 }
 
@@ -357,6 +365,19 @@ function showResults() {
     quizElements.feedback.textContent = "";
     quizElements.score.textContent = `You scored ${score} out of ${quizData.length}!`;
     quizElements.restartBtn.style.display = "inline-block";
+    quizElements.quizBtn.style.display = "inline-block";
+
+    let imageKey;
+    if (score === 0) {
+        imageKey = "evil";
+    } else if (score === quizData.length) {
+        imageKey = "happy";
+    } else {
+        imageKey = "neutral";
+    }
+
+    quizElements.resultImage.src = resultImages[imagesKey];
+    quizElements.resultImage.style.display = "block";
 }
 
 
