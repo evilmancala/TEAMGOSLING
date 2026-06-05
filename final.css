@@ -33,7 +33,7 @@ button {
     border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
 }
 
@@ -55,7 +55,7 @@ button:hover {
 }
 
 #quizBtn {
-    position: fixed;
+    position: absolute;
     z-index: 1000
     padding: 15px 30px;
     font-size: 1.2rem;
