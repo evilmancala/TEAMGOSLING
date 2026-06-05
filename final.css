@@ -33,7 +33,7 @@ button {
     border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
 }
 
@@ -42,6 +42,7 @@ button:hover {
 }
 
 #startBtn {
+    position: absolute;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
@@ -70,6 +71,7 @@ button:hover {
 }
 
 #nextBtn {
+    position: absolute;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
@@ -83,6 +85,7 @@ button:hover {
 }
 
 #restartBtn {
+    position: absolute;
     padding: 15px 30px;
     font-size: 1.2rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Moji;
