@@ -371,8 +371,7 @@ function showResults() {
     quizElements.feedback.textContent = "";
     quizElements.score.textContent = `You scored ${score} out of ${quizData.length}!`;
     quizElements.restartBtn.style.display = "inline-block";
-    quizElements.quizBtn.style.display = "inline-block";
-
+    
     let imageKey;
     if (score === 0) {
         imageKey = "evil";
