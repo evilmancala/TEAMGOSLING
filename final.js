@@ -8,6 +8,7 @@ const genreData = {
         letterboxd: "3.5/5",
         text: "'A stuntman, fresh off an almost career-ending accident, has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.' - IMDb",
         image: "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_6616.jpeg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/fallguychibi.png?raw=true",
         trailer: "https://youtu.be/j7jPnwVGdZ8?si=N8gx3l1EgQYeV4PC"
     },
     barbie: {
@@ -56,6 +57,7 @@ const genreData = {
         letterboxd: "4.1/5",
         text: "'When Sebastian, a pianist, and Mia, an actress, follow their passion and achieve success in their respective fields, they find themselves torn between their love for each other and their careers.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/lalalandchibi.png?raw=true",
         trailer: "https://youtu.be/0pdqf4P9MB8?si=hcWRyV4UWYDjoeRd"
     },
     mystery: {
@@ -67,6 +69,7 @@ const genreData = {
         letterboxd: "3.8/5",
         text: "'In 1970s Los Angeles, a mismatched pair of private eyes investigate a missing girl and the mysterious death of a porn star.' - IMDb",
         image: "https://upload.wikimedia.org/wikipedia/en/e/e9/The_Nice_Guys_poster.png",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/theniceguychibi.png?raw=true",
         trailer: "https://youtu.be/GQR5zsLHbYw?si=mw6-1wNTbJVG19Jb"
     },
     romance: {
@@ -78,6 +81,7 @@ const genreData = {
         letterboxd: "3.9/5",
         text: "'An elderly man reads to a woman with dementia the story of two young lovers whose romance is threatened by the difference in their respective social classes.' - IMDb",
         image: "https://i.ebayimg.com/images/g/proAAOxy-1lRIBE9/s-l1600.webp",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/thenotebookchibi.png?raw=true",
         trailer: "https://youtu.be/BjJcYdEOI0k?si=GNo6FCAuHuU7DNXS"
     },
     scifi: {
@@ -101,6 +105,7 @@ const genreData = {
         letterboxd: "2.8/5",
         text: "'When the CIA's most skilled operative accidentally uncovers dark agency secrets, a psychopathic former colleague puts a bounty on his head, setting off a global manhunt.' - IMDb",
         image: "https://m.media-amazon.com/images/M/MV5BZmFhZTNlNzctZGQzZi00MTA3LThiNjMtYWQzNjUzMjNjZjA3XkEyXkFqcGc@._V1_.jpg",
+        genrePng: "https://github.com/evilmancala/TEAMGOSLING/blob/main/thegraymanchibi.png?raw=true",
         trailer: "https://youtu.be/BmllggGO4pM?si=CleiVw1LyfqX0mYd"
     }
 };
